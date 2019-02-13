@@ -1,0 +1,229 @@
+html{
+    overflow-y: overlay; /*to prevent the scrollbar by changing the width of the page thus shifting the content (overlays the scrollbar)*/
+}
+
+header {
+    background-color: #fff;
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+    border-color: #ccc;
+    height: auto;
+    margin-bottom:0px;
+    overflow: auto;
+    flex-shrink: 0;
+}
+
+#headertext{
+    width:960px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+h1 {
+    display:block;
+    float:left;
+    background-color: #4aaaa5;
+    color: #fff;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    padding: 20px;   
+    margin-top:0px;
+    margin-bottom: 0px;
+}
+
+.headerlinks {
+    float:right;
+    padding: 26px 0px 26px 0px;
+    vertical-align: middle;
+}
+
+#indexlink{
+    border: black;
+    padding: 0px 10px 0px 10px;
+    display: inline;
+    border-style: solid;
+    border-width: 0px 1px 0px 0px;
+    border-color:#d9d9d9d9;
+}
+
+#portfoliolink{
+    border: black;
+    padding: 0px 10px 0px 10px;
+    display: inline;
+    border-style: solid;
+    border-width: 0px 1px 0px 0px;
+    border-color: #d9d9d9d9;
+}
+
+#contactlink{
+    border: black;
+    padding: 0px 10px 0px 10px;
+    display: inline;
+}
+
+#selfie{
+    width: 200px;
+    height: 200px;
+    float:left;
+    margin-right: 30px;
+}
+
+html, body{
+    height: 100%;
+    margin: 0px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+#maincontainer{
+    padding-top: 40px;
+    padding-bottom: 70px;
+    background-image: url(../images/qbkls.png);
+    flex: 1 0 auto;
+}
+
+.push{
+    height:61px;
+}
+
+#main{
+    display:block;
+    background-color: #fff;
+    border-style: solid;
+    border-width: 1px;
+    border-color:#ddd;
+    overflow:auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    padding:20px 30px 30px 30px;
+ }
+
+h2{
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+    border-color:#ddd;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color: #4aaaa5;
+    padding-bottom: 20px;
+    padding-top: -20px;
+    font-size: 30px;
+}
+
+p{
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    line-height: 1.75;
+    color: #777;
+    font-size:20px;
+}
+
+.hlink{
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777;
+    text-decoration: none;
+    font-size:20px;
+}
+
+.hlink:hover{
+    color: #4aaaa5;
+}
+
+.hlink:focus{
+    color: #93D9CF;
+}
+
+footer{
+    border-style: solid;
+    border-color: #4aaaa5;
+    border-width: 8px 0px 0px 0px;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    background-color: #666;
+    color: #fff;
+    padding-top:20px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+#footerp{
+    color: #fff;
+    font-size:12px;
+}
+
+input[type=text], select, textarea{
+    width: 97%;
+    padding:12px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ddd;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+label{
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    line-height: 1.75;
+    color: #777;
+    font-size:20px;
+}
+
+input[type=submit]{
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size:20px;
+    background-color:  #4aaaa5;
+    border-style: none;
+    color: #fff;
+    padding: 10px 30px 10px 30px;
+}
+
+input[type=submit]:hover{
+    background-color: #61DECC;
+}
+
+input[type=submit]:focus{
+    background-color: #93D9CF;
+}
+
+.portitem{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    float:left;
+    margin: 20px 75px 20px 0px; /*right margin is 75px to align third image up to right side of main container*/
+    padding: auto;
+}
+
+.portpic{
+    width:250px;
+    height:250px;
+}
+
+.portlabel{
+    position: absolute;
+    bottom: 10px;
+    left: auto;
+    width:250px;
+    background-color: #4aaaa5;
+    color: #fff;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top:0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.portlabel:hover{
+    background-color: #61DECC;
+}
+
+.portlabel:focus{
+    background-color: #93D9CF;
+}
+
+.last{ /*this class is assigned to last image in each row so that it will sit flush*/
+    margin-right:0px;
+}
